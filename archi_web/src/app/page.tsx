@@ -115,7 +115,7 @@ export default function Home() {
               </span> */}
             </h2>
             <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-              Team Archi 의  "떠들자" <br /> 어플리케이션 제작에 도움을 주신 분들을 소개합니다. 
+              Team Archi 의  &quot;떠들자 &quot;<br /> 어플리케이션 제작에 도움을 주신 분들을 소개합니다. 
             </p>
           </a>
         </Link>

@@ -1,2 +1,6 @@
 # about-us
-A webpage introducing our team and our service
+A webpage introducing Team-Archi 
+=============
+
+www.architchat.com
+-------------
