@@ -25,7 +25,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            아르키 로고{" "}
+            웹사이트 구성 변경중에 있습니다. 아직 내용업데이트가 되지 않은점 양해부탁드립니다.{" "}
             {/* <Image
               src="/vercel.svg"
               alt="Vercel Logo"
