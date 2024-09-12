@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import TransitionWrapper from "./TransitionWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Archi",
-  description: "About Team Archi",
+  description: "언어치료 어플리케이션 떠들자를 개발하는 Team Archi 홈페이지 입니다 ",
 };
 
 export default function RootLayout({
@@ -16,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-            <head>
+      <head>
         <meta name="description" content="About Team Archi" />
-        <meta name="keywords" content="Archi, Team Archi, About Us" />
+        <meta name="keywords" content="아르키, Team Archi, About Us" />
         <meta name="author" content="Team Archi" />
         <meta property="og:title" content="Archi" />
         <meta property="og:description" content="About Team Archi" />
@@ -26,7 +27,9 @@ export default function RootLayout({
         <meta property="og:url" content="https://www.architchat.com" />
         <title>Archi</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+        {/* <TransitionWrapper>{children}</TransitionWrapper> */}
+      </body>
     </html>
   );
 }

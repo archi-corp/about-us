@@ -1,6 +1,15 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+
 export default function Home() {
+  const linkVariants = {
+    hidden: { opacity: 0, x: -50 },
+    enter: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 50 },
+  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
@@ -63,23 +72,24 @@ export default function Home() {
         </div>
         </Link>
         <Link href="/archi" legacyBehavior>
-        <div
-          // href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-          <h2 className="mb-3 text-2xl font-semibold">
-            Archi{" "}
-            {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
-              -&gt;
-            </span> */}
-          </h2> 
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Team Archi 의 소중귀염뽀짝 팀원 5명을 소개합니다. 
-          </p>
-        </div>
+          <motion.div
+              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+              variants={linkVariants}
+              initial="hidden"
+              animate="enter"
+              exit="exit"
+              transition={{ duration: 1 }}
+            >
+            <h2 className="mb-3 text-2xl font-semibold">
+              Archi{" "}
+              {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
+                -&gt;
+              </span> */}
+            </h2> 
+            <p className="m-0 max-w-[30ch] text-sm opacity-50">
+              Team Archi 의 소중귀염뽀짝 팀원 5명을 소개합니다. 
+            </p>
+          </motion.div>
         </Link>
 
         <Link href="/journey" legacyBehavior>
