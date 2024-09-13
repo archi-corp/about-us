@@ -1,0 +1,4 @@
+module.exports = {
+  extends: ["plugin:tailwindcss/recommended", "next/core-web-vitals"],
+  plugins: ["tailwindcss"],
+};

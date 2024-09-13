@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Archi",
-  description: "언어치료 어플리케이션 떠들자를 개발하는 Team Archi 홈페이지 입니다 ",
+  description:
+    "언어치료 어플리케이션 떠들자를 개발하는 Team Archi 홈페이지 입니다 ",
 };
 
 export default function RootLayout({
@@ -27,7 +28,8 @@ export default function RootLayout({
         <meta property="og:url" content="https://www.architchat.com" />
         <title>Archi</title>
       </head>
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
+        {children}
         {/* <TransitionWrapper>{children}</TransitionWrapper> */}
       </body>
     </html>
