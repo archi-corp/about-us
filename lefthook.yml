@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npx eslint {staged_files}
+      # run: eslint --fix {staged_files} && git add {staged_files}
+
+# Use this to validate commit messages
+commit-msg:
+  commands:
+    "lint commit message":
+      run: npx --no -- commitlint --edit "$1"
