@@ -17,7 +17,7 @@ export default function Chitchat() {
         <div className="flex flex-row w-full  ">
             <div className=" w-32 flex-shrink-0 bg-white rounded-b-2xl ml-3" > 네비바 </div>
             
-            <div className="w-full ">
+            <div className="w-full"> {/* 메인 컨테이너 */}
                 
                 <div className=" h-72 w-full flex flex-row">
                     <div className ="h-72 w-72 flex-shrink-0">
@@ -34,7 +34,7 @@ export default function Chitchat() {
                           
                 <div className="h-60 w-full flex flex-row " > 
                     <div className ="h-72 w-72 flex-shrink-0">
-                        <Image src="/logo.png" alt="archi" width={200} height={200}/>
+                        <Image src="/logo.png" alt="archi" width={100} height={100}/>
                     </div>
                     <div className =" w-full p-7 "> 
                         <h2 className="font-sans font-bold text-xl p-2">Team Archi 의 언어치료 어플리케이션 떠들자</h2>                            <p > 떠들자는 무료 언어치료 어플리케이션으로 표현,어휘력을 향상을 위해 개발되었습니다.</p>

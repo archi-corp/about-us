@@ -25,15 +25,15 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            웹사이트 구성 변경중에 있습니다. 아직 내용업데이트가 되지 않은점 양해부탁드립니다.{" "}
-            {/* <Image
-              src="/vercel.svg"
+            웹사이트 구성 변경중에 있습니다. 아직 내용 업데이트가 되지 않은점 양해부탁드립니다.{" "}
+            <Image
+              src="/logo.png"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
               height={24}
               priority
-            /> */}
+            />
           </a>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default function Home() {
               </span> */}
             </h2> 
             <p className="m-0 max-w-[30ch] text-sm opacity-50">
-              Team Archi 의 소중귀염뽀짝 팀원 5명을 소개합니다. 
+              Team Archi 의 팀원 5명을 소개합니다. 
             </p>
           </motion.div>
         </Link>
