@@ -35,7 +35,7 @@ export default function Home() {
       </div>
 
       <div className="z-0 m-0 flex h-full w-full flex-grow flex-row">
-        <div className="after:via-teal z-[-1] flex h-full w-8/12 -translate-y-20 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
+        <div className="z-[-1] flex h-full w-8/12 -translate-y-20 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
           <Image
             className="z-0 hidden sm:block md:block"
             src="/mockup.png"
@@ -46,7 +46,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-[-1] flex w-3/5 place-items-start before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
+        <div className="relative z-[-1] flex w-3/5 place-items-start pl-4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
           <div className="flex flex-col">
             <div className="z-10 pb-4 text-4xl font-semibold sm:mt-0 lg:mt-40">
               떠들자{" "}
@@ -57,7 +57,8 @@ export default function Home() {
               <br /> AI-언어발달지도사.
             </div>
             <div className="z-10 mt-10 hidden font-sans sm:block">
-              "떠들자"는 언어발달장애를 가진 아동들을 위한 <br />
+              <span className="font-bold">떠들자</span>는 언어발달장애를 가진
+              아동들을 위한 <br />
               AI 기반 언어 치료 서비스를 제공하는 것을 목표로 합니다. <br />
               최신 AI 기술을 활용하여 언어 지연 치료를 지원합니다.
             </div>
