@@ -34,8 +34,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="z-0 m-0 flex h-4/6 w-full flex-grow flex-row">
-        <div className="z-[-1] flex w-7/12 -translate-y-20 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
+      <div className="z-0 m-0 flex h-4/6 w-full justify-center">
+        {/* 첫 번째 div */}
+        <div className="z-[-1] flex h-full w-[550px] -translate-y-10 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
           <Image
             className="z-0 hidden sm:block md:block"
             src="/mockup.png"
@@ -46,15 +47,17 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-[-1] flex w-3/5 place-items-start pl-4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
+        {/* 사이여백 */}
+        <div className="w-2" />
+
+        <div className="relative z-[-1] flex h-full w-[550px] place-items-start pl-4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
           <div className="flex flex-col">
             <div className="z-10 pb-4 text-4xl font-semibold sm:mt-0 lg:mt-40">
               떠들자{" "}
               <span className="pl-4 text-base font-medium"> by Archi</span>
             </div>
             <div className="z-10 mt-3 hidden text-2xl font-semibold sm:block">
-              언어발달장애를 지닌 모든 사람들을 위한
-              <br /> AI-언어발달지도사.
+              언어발달장애를 지닌 모든 사람들을 위한 <br /> AI-언어발달지도사.
             </div>
             <div className="z-10 mt-10 hidden font-sans sm:block">
               <span className="font-bold">떠들자</span>는 언어발달장애를 가진
@@ -87,14 +90,7 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/archi" legacyBehavior>
-          <motion.div
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            variants={linkVariants}
-            initial="hidden"
-            animate="enter"
-            exit="exit"
-            transition={{ duration: 1 }}
-          >
+          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">
               Archi{" "}
               {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
@@ -104,7 +100,7 @@ export default function Home() {
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 팀원 5명을 소개합니다.
             </p>
-          </motion.div>
+          </div>
         </Link>
 
         <Link href="/journey" legacyBehavior>
