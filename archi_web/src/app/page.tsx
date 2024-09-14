@@ -34,14 +34,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="z-0 m-0 flex h-full w-full flex-grow flex-row">
-        <div className="z-[-1] flex h-full w-8/12 -translate-y-20 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
+      <div className="z-0 m-0 flex h-4/6 w-full flex-grow flex-row">
+        <div className="z-[-1] flex w-7/12 -translate-y-20 place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
           <Image
             className="z-0 hidden sm:block md:block"
             src="/mockup.png"
             alt="mockup pic"
-            width={3400}
-            height={3000}
+            width={550}
+            height={500}
             priority
           />
         </div>
