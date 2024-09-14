@@ -2,5 +2,5 @@
 A webpage introducing Team-Archi 
 =============
 
-www.architchat.com
+https://architchat.com
 -------------
