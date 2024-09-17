@@ -89,6 +89,7 @@ export default function Home() {
             </p>
           </div>
         </Link>
+
         <Link href="/archi" legacyBehavior>
           <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">
@@ -104,12 +105,7 @@ export default function Home() {
         </Link>
 
         <Link href="/journey" legacyBehavior>
-          <a
-            // href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <h2 className="text-bases mb-3 font-semibold">
               Journey{" "}
               {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
@@ -119,7 +115,7 @@ export default function Home() {
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 여정을 소개합니다.
             </p>
-          </a>
+          </div>
         </Link>
         <Link href="/thanks" legacyBehavior>
           <a
