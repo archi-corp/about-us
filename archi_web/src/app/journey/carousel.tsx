@@ -7,8 +7,15 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { SlideDetail } from "./page";
 
-export default function Carousel({ slides }: { slides: any[] }) {
+export default function Carousel({
+  slides,
+  onSlideClick,
+}: {
+  slides: SlideDetail[];
+  onSlideClick: (slide: SlideDetail) => void;
+}) {
   return (
     <div className="w-full px-8">
       <Swiper
@@ -26,11 +33,7 @@ export default function Carousel({ slides }: { slides: any[] }) {
       >
         {slides.map((slide: any, index: number) => (
           <SwiperSlide key={index}>
-            <Slide
-              title={slide.title}
-              subtitle={slide.subtitle}
-              img={slide.img}
-            />
+            <Slide slide={slide} onClick={() => onSlideClick(slide)} />
           </SwiperSlide>
         ))}
       </Swiper>

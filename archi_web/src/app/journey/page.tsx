@@ -1,10 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import Slide from "./slide";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Carousel from "./carousel";
+import { useState } from "react";
 
-const slides = [
+const slides: SlideDetail[] = [
   {
     title: "팀 빌딩",
     subtitle:
@@ -49,7 +49,19 @@ const slides = [
   },
 ];
 
+export type SlideDetail = {
+  title: string;
+  subtitle: string;
+  img: string;
+};
+
 export default function Journey() {
+  const [selectedSlide, setSelectedSlide] = useState<SlideDetail>(slides[0]);
+
+  const handleSlideClick = (slide: SlideDetail) => {
+    setSelectedSlide(slide);
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center overscroll-none">
       {/* header */}
@@ -96,11 +108,25 @@ export default function Journey() {
       {/* body */}
       <div className="flex w-full flex-col items-center justify-center px-1">
         {/* details */}
-        <div className="flex flex-row"></div>
+        {selectedSlide && (
+          <div className="flex flex-row items-center">
+            <div className="relative h-0 w-full pb-[60%]">
+              <Image
+                src={selectedSlide.img}
+                alt={selectedSlide.title}
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <h2>{selectedSlide.title}</h2>
+            <p>{selectedSlide.subtitle}</p>
+          </div>
+        )}
+
         {/* slides */}
         <div className="flex w-full flex-col items-center justify-center px-4">
           <div className="mx-auto w-full max-w-7xl">
-            <Carousel slides={slides} />
+            <Carousel slides={slides} onSlideClick={handleSlideClick} />
           </div>
         </div>
       </div>
