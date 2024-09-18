@@ -106,20 +106,27 @@ export default function Journey() {
         </div>
       </div>
       {/* body */}
-      <div className="flex w-full flex-col items-center justify-center px-1">
+      <div className="flex w-full flex-col items-center justify-center gap-16 px-1">
         {/* details */}
         {selectedSlide && (
-          <div className="flex flex-row items-center">
-            <div className="relative h-0 w-full pb-[60%]">
-              <Image
-                src={selectedSlide.img}
-                alt={selectedSlide.title}
-                fill
-                style={{ objectFit: "cover" }}
-              />
+          <div className="flex w-full max-w-7xl flex-row items-start justify-between p-8">
+            {/* image */}
+            <div className="flex w-full max-w-xl flex-col items-center">
+              <div className="relative h-0 w-full pb-[60%]">
+                <Image
+                  src={selectedSlide.img}
+                  alt={selectedSlide.title}
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
-            <h2>{selectedSlide.title}</h2>
-            <p>{selectedSlide.subtitle}</p>
+            <div className="flex max-w-xl flex-col items-start justify-center gap-4">
+              <h1 className="font-mono text-2xl font-semibold">
+                {selectedSlide.title}
+              </h1>
+              <p>{selectedSlide.subtitle}</p>
+            </div>
           </div>
         )}
 
