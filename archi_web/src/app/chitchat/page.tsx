@@ -1,12 +1,20 @@
 "use client";
+
+import { ReactNode } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./page.css";
 import { FullPageScroll } from "../customComponent/FullPageScroll";
 import { AiFillCaretLeft } from "react-icons/ai";
+
+const buttonVariants = {
+  hover: { scale: 1.1, color: "#0099A4" },
+};
 
 export default function Chitchat() {
   useEffect(() => {
@@ -39,13 +47,7 @@ export default function Chitchat() {
       <FullPageScroll>
         {/* inner div 1 */}
         <div className="flex h-screen">
-          <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="800"
-            // data-aos-easing="ease-in-back"
-            // data-aos-offset="400"
-            className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black"
-          >
+          <div className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black">
             <div className="w-full items-center justify-start rounded-tl-3xl rounded-tr-3xl font-mono text-sm lg:flex">
               <Link
                 href="/"
@@ -58,13 +60,7 @@ export default function Chitchat() {
             </div>
           </div>
 
-          <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-back"
-            // data-aos-offset="400"
-            className="flex w-full flex-row"
-          >
+          <div className="flex w-full flex-row">
             <div className="bg w-full p-8 pt-8">
               {" "}
               {/* 메인 컨테이너 */}
@@ -100,20 +96,13 @@ export default function Chitchat() {
                   <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
                 </div>
               </div>
-              {/* <div className="bg-teal-300 h-60 w-full">section line</div> */}
             </div>
           </div>
         </div>
         {/* inner div2 */}
 
         <div className="flex h-screen">
-          <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="800"
-            // data-aos-easing="ease-in-back"
-            // data-aos-offset="400"
-            className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black"
-          >
+          <div className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black">
             <div className="w-full items-center justify-start rounded-tl-3xl rounded-tr-3xl font-mono text-sm lg:flex">
               <Link
                 href="/"
@@ -126,13 +115,7 @@ export default function Chitchat() {
             </div>
           </div>
 
-          <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-back"
-            // data-aos-offset="400"
-            className="flex w-full flex-row"
-          >
+          <div className="flex w-full flex-row">
             <div className="bg w-full p-8 pt-8">
               {" "}
               {/* 메인 컨테이너 */}
@@ -168,20 +151,13 @@ export default function Chitchat() {
                   <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
                 </div>
               </div>
-              {/* <div className="bg-teal-300 h-60 w-full">section line</div> */}
             </div>
           </div>
         </div>
         {/* inner div 3 */}
 
         <div className="flex h-screen">
-          <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="800"
-            // data-aos-easing="ease-in-back"
-            // data-aos-offset="400"
-            className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black"
-          >
+          <div className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black">
             <div className="w-full items-center justify-start rounded-tl-3xl rounded-tr-3xl font-mono text-sm lg:flex">
               <Link
                 href="/"
@@ -194,13 +170,7 @@ export default function Chitchat() {
             </div>
           </div>
 
-          <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-in-back"
-            // data-aos-offset="400"
-            className="flex w-full flex-row"
-          >
+          <div className="flex w-full flex-row">
             <div className="bg w-full p-8 pt-8">
               {" "}
               {/* 메인 컨테이너 */}
@@ -223,38 +193,44 @@ export default function Chitchat() {
                   </p>
 
                   <p>
-                    <span
+                    <motion.span
                       className={
                         selectedCategory == "client"
                           ? "cursor-pointer text-3xl font-bold text-teal-800"
                           : "cursor-pointer text-xl font-semibold"
                       }
                       onClick={() => handleCategoryClick("client")}
+                      variants={buttonVariants}
+                      whileHover="hover"
                     >
                       Client
-                    </span>
+                    </motion.span>
                     <br />
-                    <span
+                    <motion.span
                       className={
                         selectedCategory == "server"
                           ? "cursor-pointer text-3xl font-bold text-teal-800"
                           : "cursor-pointer text-xl font-semibold"
                       }
                       onClick={() => handleCategoryClick("server")}
+                      variants={buttonVariants}
+                      whileHover="hover"
                     >
                       Server
-                    </span>
+                    </motion.span>
                     <br />
-                    <span
+                    <motion.span
                       className={
                         selectedCategory == "ai"
                           ? "cursor-pointer text-3xl font-bold text-teal-800"
                           : "cursor-pointer text-xl font-semibold"
                       }
                       onClick={() => handleCategoryClick("ai")}
+                      variants={buttonVariants}
+                      whileHover="hover"
                     >
                       AI
-                    </span>
+                    </motion.span>
                     <br />
                   </p>
 
@@ -293,7 +269,6 @@ export default function Chitchat() {
                   <div className="relative z-[-20] flex place-items-center before:absolute before:h-[100px] before:w-full before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
                 </div>
               </div>
-              {/* <div className="bg-teal-300 h-60 w-full">section line</div> */}
             </div>
           </div>
         </div>

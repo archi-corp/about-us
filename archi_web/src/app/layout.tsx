@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import TransitionWrapper from "./TransitionWrapper";
+import TransitionWrapper from "./customComponent/TransitionWrapper/Transition";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +29,7 @@ export default function RootLayout({
         <title>Archi</title>
       </head>
       <body className={inter.className}>
-        {children}
-        {/* <TransitionWrapper>{children}</TransitionWrapper> */}
+        <TransitionWrapper>{children}</TransitionWrapper>
       </body>
     </html>
   );

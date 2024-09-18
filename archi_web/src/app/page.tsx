@@ -1,27 +1,21 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Home() {
-  const linkVariants = {
-    hidden: { opacity: 0, x: -50 },
-    enter: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: 50 },
-  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pl-16 pr-16 pt-10">
       <div className="z-10 w-full max-w-5xl flex-grow items-center justify-between text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center text-pretty font-medium lg:static lg:w-auto lg:rounded-xl">
           archichatco@gmail.com &nbsp;
         </p>
+
         <div className="flex48 fixed bottom-0 left-0 w-full items-end justify-center bg-gradient-to-t from-white via-white text-xl font-semibold lg:static lg:size-auto lg:bg-none dark:from-black dark:via-black">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Team Archi{" "}
+            {" "}
             <Image
               src="/logo.png"
               alt="Vercel Logo"

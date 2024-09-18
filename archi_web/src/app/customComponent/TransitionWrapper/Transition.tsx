@@ -5,9 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const variants = {
-  hidden: { opacity: 0.5, x: -100 },
+  hidden: { opacity: 0, x: -100 },
   enter: { opacity: 1, x: 0 },
-  exit: { opacity: 0.5, x: 100 },
 };
 
 export default function TransitionWrapper({
@@ -17,14 +16,18 @@ export default function TransitionWrapper({
 }) {
   const pathname = usePathname();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="sync">
       <motion.div
         key={pathname}
         initial="hidden"
         animate="enter"
-        exit="exit"
         variants={variants}
-        transition={{ type: "linear", duration: 0.5 }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 40,
+          duration: 1.5,
+        }}
       >
         {children}
       </motion.div>
