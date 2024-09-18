@@ -1,5 +1,53 @@
 import Image from "next/image";
 import Link from "next/link";
+import Slide from "./slide";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Carousel from "./carousel";
+
+const slides = [
+  {
+    title: "팀 빌딩",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+  {
+    title: "SeSAC 해커톤",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+  {
+    title: "제주도 워크샵",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+  {
+    title: "제주도 워크샵",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+  {
+    title: "제주도 워크샵",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+  {
+    title: "제주도 워크샵",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+  {
+    title: "제주도 워크샵",
+    subtitle:
+      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
+    img: "/sesac.jpg",
+  },
+];
 
 export default function Journey() {
   return (
@@ -43,6 +91,17 @@ export default function Journey() {
               priority
             />
           </a>
+        </div>
+      </div>
+      {/* body */}
+      <div className="flex w-full flex-col items-center justify-center px-1">
+        {/* details */}
+        <div className="flex flex-row"></div>
+        {/* slides */}
+        <div className="flex w-full flex-col items-center justify-center px-4">
+          <div className="mx-auto w-full max-w-7xl">
+            <Carousel slides={slides} />
+          </div>
         </div>
       </div>
     </main>

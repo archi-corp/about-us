@@ -31,3 +31,42 @@ body {
     text-wrap: balance;
   }
 }
+
+/* 네비게이션 버튼 색상 변경 */
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-color: #000000; /* 원하는 색상으로 변경 */
+  /* --swiper-navigation-sides-offset: -50px; */
+  position: static;
+  margin-top: 0;
+}
+
+/* 호버 상태에서 색상 변경 */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply text-gray-700; /* 호버 시 색상 변경 */
+}
+
+.swiper-pagination-bullet {
+  --swiper-pagination-color: #000000; /* 원하는 색상으로 변경 */
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  /* border: 3px solid blue; */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid red; */
+}
+
+.swiper-wrapper {
+  position: absolute;
+  width: 80%;
+  /* border: 3px solid yellow; */
+  /* margin: 0 50px; */
+}
