@@ -6,52 +6,25 @@ import { useState } from "react";
 
 const slides: SlideDetail[] = [
   {
-    title: "팀 빌딩",
-    subtitle:
-      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
-    img: "/sesac.jpg",
-  },
-  {
     title: "SeSAC 해커톤",
     subtitle:
       "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
     img: "/sesac.jpg",
+    participants: ["강민석", "박연우", "양성우", "이지훈", "우정균"],
   },
   {
     title: "제주도 워크샵",
     subtitle:
       "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
     img: "/sesac.jpg",
-  },
-  {
-    title: "제주도 워크샵",
-    subtitle:
-      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
-    img: "/sesac.jpg",
-  },
-  {
-    title: "제주도 워크샵",
-    subtitle:
-      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
-    img: "/sesac.jpg",
-  },
-  {
-    title: "제주도 워크샵",
-    subtitle:
-      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
-    img: "/sesac.jpg",
-  },
-  {
-    title: "제주도 워크샵",
-    subtitle:
-      "서울시 경제진흥원에서 주최한 새싹 해커톤에 참여하였습니다. 여기서 우수상을 수상하였고, 이를 계기로 배포를 목표로 개발을 시작했습니다.",
-    img: "/sesac.jpg",
+    participants: ["강민석", "박연우", "이지훈", "우정균"],
   },
 ];
 
 export type SlideDetail = {
   title: string;
   subtitle: string;
+  participants: string[];
   img: string;
 };
 
@@ -122,10 +95,20 @@ export default function Journey() {
               </div>
             </div>
             <div className="flex max-w-xl flex-col items-start justify-center gap-4">
-              <h1 className="font-mono text-2xl font-semibold">
+              <h1 className="font-mono text-3xl font-extrabold">
                 {selectedSlide.title}
               </h1>
-              <p>{selectedSlide.subtitle}</p>
+              <div className="flex flex-row items-start justify-center gap-2">
+                {selectedSlide.participants.map((participant) => (
+                  <p
+                    className="text-xl font-semibold text-gray-500"
+                    key={participant}
+                  >
+                    {participant}
+                  </p>
+                ))}
+              </div>
+              <p className="text-xl font-medium">{selectedSlide.subtitle}</p>
             </div>
           </div>
         )}
