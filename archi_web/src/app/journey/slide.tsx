@@ -10,7 +10,7 @@ export default function Slide({
   slide: SlideDetail;
   onClick: () => void;
 }) {
-  const { title, subtitle, img } = slide;
+  const { title, content, img } = slide;
   return (
     <div className="w-full max-w-xs p-2" onClick={onClick}>
       <div className="group overflow-hidden rounded-lg border border-transparent p-3 transition-colors hover:border-gray-300 hover:bg-gray-100">
@@ -20,7 +20,7 @@ export default function Slide({
         </div>
         <h2 className="mt-4 text-center text-xl font-semibold">{title}</h2>
         <p className="mt-2 line-clamp-2 text-center text-base text-gray-600">
-          {subtitle}
+          {content}
         </p>
       </div>
     </div>
