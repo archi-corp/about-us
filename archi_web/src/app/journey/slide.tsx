@@ -18,10 +18,12 @@ export default function Slide({
         <div className="relative h-0 w-full pb-[60%]">
           <Image src={img} alt={title} fill style={{ objectFit: "cover" }} />
         </div>
-        <h2 className="mt-4 text-center text-xl font-semibold">{title}</h2>
-        <p className="mt-2 line-clamp-2 text-center text-base text-gray-600">
-          {content}
-        </p>
+        <div className="flex flex-col items-start">
+          <h2 className="mt-4 text-center text-xl font-semibold">{title}</h2>
+          <p className="mt-2 line-clamp-2 text-center text-base text-gray-600">
+            {content}
+          </p>
+        </div>
       </div>
     </div>
   );
