@@ -16,5 +16,6 @@ post-checkout:
   commands:
     "install dependencies":
       run: |
-        nvm use 22  
+        nvm install 22
+        nvm use 22
         npm install
