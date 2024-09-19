@@ -1,27 +1,21 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Home() {
-  const linkVariants = {
-    hidden: { opacity: 0, x: -50 },
-    enter: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: 50 },
-  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pl-16 pr-16 pt-10">
-      <div className="z-10 w-full max-w-5xl flex-grow items-center justify-between text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center text-pretty font-medium lg:static lg:w-auto lg:rounded-xl">
+      <div className="z-10 w-full max-w-5xl flex-grow items-center justify-between text-sm md:flex lg:flex">
+        <p className="fixed left-0 top-0 flex w-full justify-center text-pretty pt-2 font-medium lg:static lg:w-auto lg:rounded-xl">
           archichatco@gmail.com &nbsp;
         </p>
+
         <div className="flex48 fixed bottom-0 left-0 w-full items-end justify-center bg-gradient-to-t from-white via-white text-xl font-semibold lg:static lg:size-auto lg:bg-none dark:from-black dark:via-black">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Team Archi{" "}
+            {" "}
             <Image
               src="/logo.png"
               alt="Vercel Logo"
@@ -51,8 +45,8 @@ export default function Home() {
         <div className="w-2" />
 
         <div className="relative z-[-1] flex h-full w-[550px] place-items-start pl-4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-slate-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-300 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-teal-900 after:dark:via-[#318284] after:dark:opacity-40">
-          <div className="flex flex-col">
-            <div className="z-10 pb-4 text-4xl font-semibold sm:mt-0 lg:mt-40">
+          <div className="sm: flex flex-col md:flex-col lg:flex-col">
+            <div className="z-10 hidden pb-4 pt-6 text-4xl font-semibold sm:mt-0 sm:block md:block lg:mt-40 lg:pt-0">
               떠들자{" "}
               <span className="pl-4 text-base font-medium"> by Archi</span>
             </div>
@@ -71,19 +65,8 @@ export default function Home() {
 
       <div className="mb-32 grid flex-grow pt-20 text-center lg:mb-0 lg:h-6 lg:w-4/6 lg:max-w-5xl lg:-translate-y-28 lg:grid-cols-4 lg:text-left">
         <Link href="/chitchat" legacyBehavior>
-          <div
-            //href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            // target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="m-0 max-w-[30ch] text-sm opacity-50"></p>
-            <h2 className="mb-3 text-base font-semibold">
-              떠들자{" "}
-              {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
-              -&gt;
-            </span> */}
-            </h2>
+          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+            <h2 className="mb-3 text-base font-semibold">떠들자 </h2>
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 언어치료 어플리케이션 떠들자.
             </p>
@@ -91,13 +74,8 @@ export default function Home() {
         </Link>
 
         <Link href="/archi" legacyBehavior>
-          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-            <h2 className="mb-3 text-base font-semibold">
-              Archi{" "}
-              {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
-                -&gt;
-              </span> */}
-            </h2>
+          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+            <h2 className="mb-3 text-base font-semibold">Archi </h2>
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 팀원 5명을 소개합니다.
             </p>
@@ -105,35 +83,22 @@ export default function Home() {
         </Link>
 
         <Link href="/journey" legacyBehavior>
-          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-            <h2 className="text-bases mb-3 font-semibold">
-              Journey{" "}
-              {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
-                -&gt;
-              </span> */}
-            </h2>
+
+          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+            <h2 className="text-bases mb-3 font-semibold">Journey </h2>
+
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 여정을 소개합니다.
             </p>
           </div>
         </Link>
         <Link href="/thanks" legacyBehavior>
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className="mb-3 text-base font-semibold">
-              Thanks to{" "}
-              {/* <span className="inline-block transition-transform group-hover:translate-x-5 motion-reduce:transform-none">
-                -&gt;
-              </span> */}
-            </h2>
+          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+            <h2 className="mb-3 text-base font-semibold">Thanks to </h2>
             <p className="m-0 max-w-[30ch] text-balance text-xs opacity-50">
               &quot;떠들자&quot; 제작에 도움을 주신 분들을 소개합니다.
             </p>
-          </a>
+          </div>
         </Link>
       </div>
     </main>
