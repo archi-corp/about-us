@@ -87,7 +87,7 @@ export default function Journey() {
       <div className="flex w-full flex-col items-center justify-center gap-16 px-1">
         {/* details */}
         {selectedSlide && (
-          <div className="flex w-full max-w-7xl flex-row items-start justify-between p-8">
+          <div className="flex w-full max-w-7xl flex-col items-start justify-between gap-4 p-8 lg:flex-row">
             {/* image */}
             <div className="flex w-full max-w-xl flex-col items-center">
               <div className="relative h-0 w-full pb-[60%]">
