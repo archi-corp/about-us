@@ -2,10 +2,13 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
     "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.11",
+    "eslint-config-next": "^14.2.12",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "lefthook": "^1.7.15"
+    "lefthook": "^1.7.15",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
