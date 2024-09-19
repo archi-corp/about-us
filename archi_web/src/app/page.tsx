@@ -72,7 +72,6 @@ export default function Home() {
             </p>
           </div>
         </Link>
-
         <Link href="/archi" legacyBehavior>
           <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">Archi </h2>
@@ -83,10 +82,8 @@ export default function Home() {
         </Link>
 
         <Link href="/journey" legacyBehavior>
-
           <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <h2 className="text-bases mb-3 font-semibold">Journey </h2>
-
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 여정을 소개합니다.
             </p>
