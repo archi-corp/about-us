@@ -27,4 +27,8 @@ post-checkout:
 
         nvm install 22
         nvm use 22
-        npm install
+        if git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep 'package\(.\|-\)lock.json' > /dev/null; then
+          npm install
+        else
+          echo "Dependencies are up to date."
+        fi
