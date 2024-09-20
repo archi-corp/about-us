@@ -18,7 +18,7 @@ export default function Home() {
             {" "}
             <Image
               src="/logo.png"
-              alt="Vercel Logo"
+              alt="Archi Logo"
               className="dark:invert"
               width={100}
               height={24}
