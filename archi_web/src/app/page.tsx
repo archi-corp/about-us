@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pl-16 pr-16 pt-10">
+    <main className="flex overflow-auto min-h-screen flex-col items-center justify-between pl-16 pr-16 pt-10">
       <div className="z-10 w-full max-w-5xl flex-grow items-center justify-between text-sm md:flex lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center text-pretty pt-2 font-medium lg:static lg:w-auto lg:rounded-xl">
           archichatco@gmail.com &nbsp;
