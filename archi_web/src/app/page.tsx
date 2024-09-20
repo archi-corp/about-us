@@ -9,7 +9,7 @@ export default function Home() {
           archichatco@gmail.com &nbsp;
         </p>
 
-        <div className="flex48 fixed bottom-0 left-0 w-full items-end justify-center bg-gradient-to-t from-white via-white text-xl font-semibold lg:static lg:size-auto lg:bg-none dark:from-black dark:via-black">
+        <div className="hidden lg:block md:block sm:block fixed bottom-0 left-0 w-full items-end justify-center bg-gradient-to-t from-white via-white text-xl font-semibold lg:static lg:size-auto lg:bg-none dark:from-black dark:via-black">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             target="_blank"
@@ -65,7 +65,7 @@ export default function Home() {
 
       <div className="mb-32 grid flex-grow pt-20 text-center lg:mb-0 lg:h-6 lg:w-4/6 lg:max-w-5xl lg:-translate-y-28 lg:grid-cols-4 lg:text-left">
         <Link href="/chitchat" legacyBehavior>
-          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors lg:hover:border-gray-300 lg:hover:bg-gray-100 lg:hover:dark:border-neutral-700 lg:hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">떠들자 </h2>
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 언어치료 어플리케이션 떠들자.
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/archi" legacyBehavior>
-          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors lg:hover:border-gray-300 lg:hover:bg-gray-100 lg:hover:dark:border-neutral-700 lg:hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">Archi </h2>
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 팀원 5명을 소개합니다.
@@ -82,7 +82,7 @@ export default function Home() {
         </Link>
 
         <Link href="/journey" legacyBehavior>
-          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors lg:hover:border-gray-300 lg:hover:bg-gray-100 lg:hover:dark:border-neutral-700 lg:hover:dark:bg-neutral-800/30">
             <h2 className="text-bases mb-3 font-semibold">Journey </h2>
             <p className="m-0 max-w-[30ch] text-xs opacity-50">
               Team Archi 의 여정을 소개합니다.
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/thanks" legacyBehavior>
-          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors lg:hover:border-gray-300 lg:hover:bg-gray-100 lg:hover:dark:border-neutral-700 lg:hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">Thanks to </h2>
             <p className="m-0 max-w-[30ch] text-balance text-xs opacity-50">
               &quot;떠들자&quot; 제작에 도움을 주신 분들을 소개합니다.
