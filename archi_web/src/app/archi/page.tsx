@@ -36,9 +36,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full grow items-center justify-center">
+      <div className="flex w-full grow flex-col items-center justify-center">
         {/* team archi title */}
-        <div className="flex w-full place-items-center lg:mb-4 items-center justify-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40">
+        <div className="flex w-full place-items-center items-center justify-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] lg:mb-4 before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40">
           <h1 className="text-center text-2xl font-semibold sm:mb-3 lg:text-4xl">
             Introducing Team Archi ツ
           </h1>
@@ -57,7 +57,7 @@ export default function Home() {
                   src={"/profile_images/minseok.jpg"}
                   alt={"강민석"}
                   className={
-                    "mx-auto mb-5 lg:h-24 lg:w-24 sm:h-20 sm:w-20 rounded-full object-cover lg:mx-0 lg:items-start"
+                    "mx-auto mb-5 rounded-full object-cover sm:h-20 sm:w-20 lg:mx-0 lg:h-24 lg:w-24 lg:items-start"
                   }
                   width={100}
                   height={100}
@@ -84,7 +84,7 @@ export default function Home() {
                   src={"/profile_images/rachel.jpg"}
                   alt={"박연우"}
                   className={
-                    "mx-auto mb-5 lg:h-24 lg:w-24 sm:h-20 sm:w-20 rounded-full object-cover lg:mx-0 lg:items-start"
+                    "mx-auto mb-5 rounded-full object-cover sm:h-20 sm:w-20 lg:mx-0 lg:h-24 lg:w-24 lg:items-start"
                   }
                   width={100}
                   height={100}
@@ -112,7 +112,7 @@ export default function Home() {
                   src={"/profile_images/yang.png"}
                   alt={"양성우"}
                   className={
-                    "mx-auto mb-5 lg:h-24 lg:w-24 sm:h-20 sm:w-20 rounded-full object-cover lg:mx-0 lg:items-start"
+                    "mx-auto mb-5 rounded-full object-cover sm:h-20 sm:w-20 lg:mx-0 lg:h-24 lg:w-24 lg:items-start"
                   }
                   width={100}
                   height={100}
@@ -138,7 +138,7 @@ export default function Home() {
                   src={"/profile_images/rlaalswl.jpg"}
                   alt={"이지훈"}
                   className={
-                    "mx-auto mb-5 lg:h-24 lg:w-24 sm:h-20 sm:w-20 rounded-full object-cover lg:mx-0 lg:items-start"
+                    "mx-auto mb-5 rounded-full object-cover sm:h-20 sm:w-20 lg:mx-0 lg:h-24 lg:w-24 lg:items-start"
                   }
                   width={100}
                   height={100}
@@ -164,7 +164,7 @@ export default function Home() {
                   src={"/profile_images/woodio.jpg"}
                   alt={"우정균"}
                   className={
-                    "mx-auto mb-5 lg:h-24 lg:w-24 sm:h-20 sm:w-20 rounded-full object-cover lg:mx-0 lg:items-start"
+                    "mx-auto mb-5 rounded-full object-cover sm:h-20 sm:w-20 lg:mx-0 lg:h-24 lg:w-24 lg:items-start"
                   }
                   width={100}
                   height={100}

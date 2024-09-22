@@ -11,7 +11,11 @@ export function LinkToMember({
   link: string;
 }) {
   return (
-    <div className={"group flex w-full max-w-xs flex-row items-center justify-center lg:justify-start"}>
+    <div
+      className={
+        "group flex w-full max-w-xs flex-row items-center justify-center lg:justify-start"
+      }
+    >
       <Link href={link} legacyBehavior>
         <div
           className={"group flex flex-row items-center rounded-lg px-5 py-2"}
