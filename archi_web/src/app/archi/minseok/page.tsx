@@ -40,7 +40,7 @@ export default function Minseok() {
             >
               Hello, I'm minseok
             </h1>
-            <p className={"max-w-4xl text-sm opacity-80"}>
+            <p className={"max-w-4xl text-sm opacity-80 z-20"}>
               여기서부터 저의 자기소개를 주저리주저리 적으면 좋지 않을까요.
               여기부터는 민석이의 간단한 자기소개 시작!! 아래 소셜 미디어는
               원하시는거 변경/추가해드릴게요

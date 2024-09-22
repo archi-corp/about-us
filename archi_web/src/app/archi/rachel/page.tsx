@@ -50,7 +50,7 @@ export default function Rachel() {
               어쩌고 저쩌고 다양한 일들을 도맡아 하고 있습니다. 관심사는 뭐.. 움
               만들어가는중... archi에게 많은 사랑과 관심을 주세요..!!
             </p>
-            <div className={"my-4 flex gap-8"}>
+            <div className={"my-4 flex gap-8 z-20"}>
               <a
                 className="pointer-events-auto flex place-items-center gap-2 p-8 lg:p-0"
                 href="https://github.com/racheliee"

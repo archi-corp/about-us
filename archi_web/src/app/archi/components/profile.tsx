@@ -10,7 +10,7 @@ export function Profile({
   role: any;
 }) {
   return (
-    <div className="group mb-8 items-center justify-center rounded-lg px-5 py-4 text-center lg:text-left">
+    <div className="z-20 group mb-8 items-center justify-center rounded-lg px-5 py-4 text-center lg:text-left">
       <Image
         src={imageSrc}
         alt={name}

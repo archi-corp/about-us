@@ -41,7 +41,7 @@ export default function Rlaalswl() {
               여기부터는 지훈 오빠의 간단한 자기소개 시작!! 아래 소셜 미디어는
               원하시는거 변경/추가해드릴게요
             </p>
-            <div className={"my-4 flex gap-8"}>
+            <div className={"my-4 flex gap-8 z-20"}>
               <a
                 className="pointer-events-auto flex place-items-center gap-2 p-8 lg:p-0"
                 href="https://github.com/racheliee"
