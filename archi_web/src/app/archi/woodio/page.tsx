@@ -85,7 +85,7 @@ export default function Woodio() {
         <div className={"flex flex-col items-center justify-center lg:items-start lg:justify-start"}>
             <LinkToMember name={"강민석"} imageSrc={"/profile_images/minseok.jpg"} link={"/archi/minseok"}></LinkToMember>
             <LinkToMember name={"박연우"} imageSrc={"/profile_images/rachel.jpg"} link={"/archi/rachel"}></LinkToMember>
-            <LinkToMember name={"양성우"} imageSrc={"/profile_images/minseok.jpg"} link={"/archi/yang"}></LinkToMember>
+            <LinkToMember name={"양성우"} imageSrc={"/profile_images/yang.jpg"} link={"/archi/yang"}></LinkToMember>
             <LinkToMember name={"이지훈"} imageSrc={"/profile_images/rlaalswl.jpg"} link={"/archi/rlaalswl"}></LinkToMember>
         </div>
       </div>

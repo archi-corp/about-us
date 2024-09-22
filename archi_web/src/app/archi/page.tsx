@@ -25,7 +25,7 @@ export default function Home() {
           >
             {/*archi logo image*/}
             <Image
-              src="/logo-chalk.png"
+              src="/logo.png"
               alt="archi logo"
               className="dark:accent-teal-300"
               width={100}
@@ -109,7 +109,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={"/logo-chalk.png"}
+                  src={"/profile_images/yang.png"}
                   alt={"양성우"}
                   className={
                     "mx-auto mb-5 lg:h-24 lg:w-24 sm:h-20 sm:w-20 rounded-full object-cover lg:mx-0 lg:items-start"

@@ -19,7 +19,7 @@ export default function Yang() {
               >
                   {/*  Profile */}
                   <Profile
-                      imageSrc={"/logo-chalk.png"}
+                      imageSrc={"/profile_images/yang.png"}
                       name={"양성우"}
                       role={<>AI Developer</>}
                   ></Profile>

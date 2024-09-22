@@ -87,7 +87,7 @@ export default function Rlaalswl() {
               <LinkToMember name={"강민석"} imageSrc={"/profile_images/minseok.jpg"} link={"/archi/minseok"}></LinkToMember>
               <LinkToMember name={"박연우"} imageSrc={"/profile_images/rachel.jpg"} link={"/archi/rachel"}></LinkToMember>
               <LinkToMember name={"우정균"} imageSrc={"/profile_images/woodio.jpg"} link={"/archi/woodio"}></LinkToMember>
-              <LinkToMember name={"양성우"} imageSrc={"/profile_images/minseok.jpg"} link={"/archi/yang"}></LinkToMember>
+              <LinkToMember name={"양성우"} imageSrc={"/profile_images/yang.jpg"} link={"/archi/yang"}></LinkToMember>
           </div>
       </div>
     </main>

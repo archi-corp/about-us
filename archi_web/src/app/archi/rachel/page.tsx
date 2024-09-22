@@ -96,7 +96,7 @@ export default function Rachel() {
         {/*  links to other members */}
         <div className={"flex flex-col items-center justify-center lg:items-start lg:justify-start"}>
           <LinkToMember name={"강민석"} imageSrc={"/profile_images/minseok.jpg"} link={"/archi/minseok"}></LinkToMember>
-          <LinkToMember name={"양성우"} imageSrc={"/profile_images/minseok.jpg"} link={"/archi/yang"}></LinkToMember>
+          <LinkToMember name={"양성우"} imageSrc={"/profile_images/yang.jpg"} link={"/archi/yang"}></LinkToMember>
           <LinkToMember name={"우정균"} imageSrc={"/profile_images/woodio.jpg"} link={"/archi/woodio"}></LinkToMember>
           <LinkToMember name={"이지훈"} imageSrc={"/profile_images/rlaalswl.jpg"} link={"/archi/rlaalswl"}></LinkToMember>
         </div>
