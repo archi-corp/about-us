@@ -6,7 +6,7 @@ import { LinkToMember } from "../components/linkToMember";
 export default function Woodio() {
   return (
     <main
-      className={"flex min-h-screen flex-col items-center justify-center p-24"}
+      className={"flex min-h-screen flex-col items-center justify-center px-24"}
     >
       {/*  Fix logo and back button to the top */}
       <Topbar githubLink={"https://github.com/archi-corp"}></Topbar>
