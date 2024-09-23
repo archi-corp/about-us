@@ -1,31 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Topbar } from "./components/topbar";
+
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-24">
       {/*Fix logo and back button to the top*/}
-      <div className="z-10 flex w-full max-w-7xl items-center justify-between font-mono text-sm">
-        {/*<p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4 lg:dark:bg-zinc-800/30">*/}
-        <Link
-          href="/"
-          className="font left-0 top-0 flex w-full justify-center text-4xl font-thin lg:static lg:w-auto lg:rounded-xl lg:p-4"
-        >
-          {" "}
-          &lt;{" "}
-        </Link>{" "}
-        &nbsp;
-        {/*archi logo image*/}
-        <Image
-          src="/logo.png"
-          alt="archi logo"
-          className="dark:accent-teal-300"
-          width={100}
-          height={24}
-          priority
-        />
-      </div>
+      <Topbar></Topbar>
 
       <div className="flex w-full grow flex-col items-center justify-center">
         {/* team archi title */}

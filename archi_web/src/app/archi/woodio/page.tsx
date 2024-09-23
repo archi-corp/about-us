@@ -10,7 +10,8 @@ export default function Woodio() {
       className={"flex min-h-screen flex-col items-center justify-center px-24"}
     >
       {/*  Fix logo and back button to the top */}
-      <Topbar githubLink={"https://github.com/archi-corp"}></Topbar>
+      <Topbar></Topbar>
+      
       <div className={"flex w-full max-w-7xl flex-col"}>
         {/* Name and Information Section */}
         <div

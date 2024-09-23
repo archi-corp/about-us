@@ -2,7 +2,7 @@
 import { Topbar } from "../components/topbar";
 import { Profile } from "../components/profile";
 import { LinkToMember } from "../components/linkToMember";
-import { Description } from "../components/description";  
+import { Description } from "../components/description";
 
 export default function Minseok() {
   return (
@@ -10,8 +10,8 @@ export default function Minseok() {
       className={"flex min-h-screen flex-col items-center justify-center px-24"}
     >
       {/*  Fix logo and back button to the top */}
-      <Topbar githubLink={"https://github.com/archi-corp"}></Topbar>
-
+      <Topbar></Topbar>
+      
       <div className={"flex w-full max-w-7xl flex-col"}>
         {/* Name and Information Section */}
         <div
