@@ -29,15 +29,15 @@ export default function Home() {
 
       <div className="flex w-full grow flex-col items-center justify-center">
         {/* team archi title */}
-        <div className="flex w-full place-items-center items-center justify-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] lg:mb-4 before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40">
-          <h1 className="text-center text-2xl font-semibold sm:mb-3 lg:text-4xl">
+        <div className="z-0 flex w-full place-items-center items-center justify-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-teal-100 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-100 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] lg:mb-4 before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40">
+          <h1 className="z-10 text-center text-2xl font-semibold sm:mb-3 lg:text-4xl">
             Introducing Team Archi ツ
           </h1>
         </div>
 
         {/* Center Names Grid */}
         <div className="flex w-full items-center justify-center">
-          <div className="grid content-center text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-5 lg:text-left">
+          <div className="z-10 grid content-center text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-5 lg:text-left">
             {/* 강민석 =======================================================================================================================*/}
             <Link href="/archi/minseok" legacyBehavior>
               <div
