@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex overflow-auto min-h-screen flex-col items-center justify-between pl-16 pr-16 pt-10">
-      <div className="z-10 w-full max-w-5xl flex-grow items-center justify-between text-sm md:flex lg:flex">
+    <main className="flex min-h-screen flex-col items-center justify-between overflow-auto px-16 pt-10">
+      <div className="z-10 w-full max-w-5xl grow items-center justify-between text-sm md:flex lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center text-pretty pt-2 font-medium lg:static lg:w-auto lg:rounded-xl">
           archichatco@gmail.com &nbsp;
         </p>
 
-        <div className="hidden lg:block md:block sm:block fixed bottom-0 left-0 w-full items-end justify-center bg-gradient-to-t from-white via-white text-xl font-semibold lg:static lg:size-auto lg:bg-none dark:from-black dark:via-black">
+        <div className="fixed bottom-0 left-0 hidden w-full items-end justify-center bg-gradient-to-t from-white via-white text-xl font-semibold sm:block md:block lg:static lg:block lg:size-auto lg:bg-none dark:from-black dark:via-black">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             target="_blank"
@@ -48,15 +48,15 @@ export default function Home() {
           <div className="sm: flex flex-col md:flex-col lg:flex-col">
 
 
-            <div className="z-10 hidden pb-4 pt-6 text-4xl font-semibold sm:mt-0 sm:block md:block lg:mt-40 lg:pt-0">
+            <div className="z-10 hidden pb-4 pr-4 pt-6 text-4xl font-semibold sm:mt-0 sm:block md:block lg:mt-40 lg:pt-0">
 
               떠들자{" "}
-              <span className="pl-4 text-base font-medium"> 12월중 베타테스트 예정</span>
+              <span className="text-nowrap text-base font-medium"> 12월중 베타테스트 예정</span>
 
 
             </div>
             <div className="z-10 mt-3 hidden text-2xl font-semibold sm:block">
-              언어발달장애를 지닌 모든 사람들을 위한 <br/> AI-언어발달지도사.
+              언어발달장애를 지닌 모든 사람들을 위한 <br/> AI-언어발달지도사
             </div>
             <div className="z-10 mt-10 hidden font-sans sm:block">
               <span className="font-bold">떠들자</span>는 언어발달장애를 가진
@@ -69,7 +69,7 @@ export default function Home() {
       </div>
 
       <div
-          className="mb-32 grid flex-grow pt-20 text-center lg:mb-0 lg:h-6 lg:w-4/6 lg:max-w-5xl lg:-translate-y-28 lg:grid-cols-4 lg:text-left">
+          className="mb-32 grid grow pt-20 text-center lg:mb-0 lg:h-6 lg:w-4/6 lg:max-w-5xl lg:-translate-y-28 lg:grid-cols-4 lg:text-left">
         <Link href="/chitchat" legacyBehavior>
           <div className="group z-20 rounded-lg border border-transparent px-5 py-4 transition-colors lg:hover:border-gray-300 lg:hover:bg-gray-100 lg:hover:dark:border-neutral-700 lg:hover:dark:bg-neutral-800/30">
             <h2 className="mb-3 text-base font-semibold">떠들자 </h2>
