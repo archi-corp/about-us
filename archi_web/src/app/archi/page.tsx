@@ -16,24 +16,15 @@ export default function Home() {
           &lt;{" "}
         </Link>{" "}
         &nbsp;
-        <div className="right-0 top-0 flex w-full items-center justify-center bg-transparent lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://github.com/archi-corp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {/*archi logo image*/}
-            <Image
-              src="/logo.png"
-              alt="archi logo"
-              className="dark:accent-teal-300"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        {/*archi logo image*/}
+        <Image
+          src="/logo.png"
+          alt="archi logo"
+          className="dark:accent-teal-300"
+          width={100}
+          height={24}
+          priority
+        />
       </div>
 
       <div className="flex w-full grow flex-col items-center justify-center">
@@ -109,7 +100,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={"/profile_images/yang.png"}
+                  src={"/profile_images/yang.jpg"}
                   alt={"양성우"}
                   className={
                     "mx-auto mb-5 rounded-full object-cover sm:h-20 sm:w-20 lg:mx-0 lg:h-24 lg:w-24 lg:items-start"
