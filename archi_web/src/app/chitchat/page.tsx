@@ -47,25 +47,26 @@ export default function Chitchat() {
       <FullPageScroll>
         {/* inner div 1 */}
         <div className="flex h-screen">
-          <div className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black">
-            <div className="w-full items-center justify-start rounded-tl-3xl rounded-tr-3xl font-mono text-sm lg:flex">
+          <div
+            className="fixed flex h-full flex-row rounded-tr-xl bg-none from-white via-white pl-5 dark:from-black dark:via-black">
+            <div className="flex w-full items-center justify-start rounded-t-3xl font-mono text-sm">
               <Link
                 href="/"
                 className="font flex w-full justify-center text-4xl font-thin lg:static lg:w-auto"
               >
                 {" "}
-                <AiFillCaretLeft className="h-6 w-6" />{" "}
+                <AiFillCaretLeft className="size-6" />{" "}
               </Link>{" "}
               &nbsp;
             </div>
           </div>
 
           <div className="flex w-full flex-row">
-            <div className="bg w-full p-8 pt-8">
+            <div className="bg w-full p-8">
               {" "}
               {/* 메인 컨테이너 */}
-              <div className="flex h-full w-full flex-row">
-                <div className="w-8/12 flex-shrink-0">
+              <div className="size-full lg:flex lg:flex-row">
+                <div className="hidden w-8/12 shrink-0 lg:block">
                   <Image
                     src="/mockup2.svg"
                     alt="archi"
@@ -75,7 +76,7 @@ export default function Chitchat() {
                 </div>
 
                 {/* 글 */}
-                <div className="z-[-1] -translate-x-14 translate-y-20 pt-40">
+                <div className="z-[-1] pl-20 pt-20 lg:-translate-x-14 lg:translate-y-20 lg:pt-40">
                   <p className="pb-5 font-sans text-xl">
                     Team Archi 의 언어치료 어플리케이션
                     <br />{" "}
@@ -93,7 +94,8 @@ export default function Chitchat() {
                     <br /> 12월중 베타 테스트 예정.
                   </p>
 
-                  <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
+                  <div
+                    className="before:bg-gradient-radial after:bg-gradient-conic relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
                 </div>
               </div>
             </div>
@@ -102,25 +104,25 @@ export default function Chitchat() {
         {/* inner div2 */}
 
         <div className="flex h-screen">
-          <div className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black">
-            <div className="w-full items-center justify-start rounded-tl-3xl rounded-tr-3xl font-mono text-sm lg:flex">
+          <div className="fixed flex h-full flex-row rounded-tr-xl  bg-none from-white via-white pl-5 dark:from-black dark:via-black">
+            <div className="flex w-full items-center justify-start rounded-t-3xl font-mono text-sm">
               <Link
                 href="/"
                 className="font flex w-full justify-center text-4xl font-thin lg:static lg:w-auto"
               >
                 {" "}
-                <AiFillCaretLeft className="h-6 w-6" />{" "}
+                <AiFillCaretLeft className="size-6" />{" "}
               </Link>{" "}
               &nbsp;
             </div>
           </div>
 
           <div className="flex w-full flex-row">
-            <div className="bg w-full p-8 pt-8">
+            <div className="bg w-full p-8">
               {" "}
               {/* 메인 컨테이너 */}
-              <div className="flex h-full w-full flex-row">
-                <div className="w-8/12 flex-shrink-0">
+              <div className="size-full lg:flex lg:flex-row">
+                <div className="hidden w-8/12 shrink-0 lg:block">
                   <Image
                     src="/mockup2.svg"
                     alt="archi"
@@ -130,9 +132,12 @@ export default function Chitchat() {
                 </div>
 
                 {/* 글 */}
-                <div className="z-[-1] -translate-x-14 translate-y-20 pt-40">
-                  <p className="font-sans text-2xl">BackGround</p>
+                <div className="z-[-1] pl-20 pt-20 lg:-translate-x-14 lg:translate-y-20 lg:pt-40">
+                  <p className="pb-5 font-sans text-xl">
 
+                    <br />{" "}
+                    <span className="text-2xl font-semibold">BackGround</span>
+                  </p>
                   <p className="pt-5">
                     {" "}
                     늘어나는 맞벌이 가정, 코로나19 로 인해 언어장애 사람들이
@@ -148,34 +153,38 @@ export default function Chitchat() {
                   <p className="text-xs font-semibold">
                     <br /> 12월중 베타 테스트 예정.
                   </p>
-                  <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
+                  <div
+                    className="before:bg-gradient-radial after:bg-gradient-conic relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
         {/* inner div 3 */}
 
         <div className="flex h-screen">
-          <div className="fixed flex h-full flex-row rounded-tr-xl bg-gradient-to-t from-white via-white pl-12 lg:bg-none dark:from-black dark:via-black">
-            <div className="w-full items-center justify-start rounded-tl-3xl rounded-tr-3xl font-mono text-sm lg:flex">
+          <div
+            className="fixed flex h-full flex-row rounded-tr-xl  bg-none from-white via-white pl-5 dark:from-black dark:via-black">
+            <div className="w-full items-center justify-start rounded-t-3xl font-mono text-sm lg:flex">
               <Link
                 href="/"
                 className="font flex w-full justify-center text-4xl font-thin lg:static lg:w-auto"
               >
                 {" "}
-                <AiFillCaretLeft className="h-6 w-6" />{" "}
+                <AiFillCaretLeft className="size-6" />{" "}
               </Link>{" "}
               &nbsp;
             </div>
           </div>
 
           <div className="flex w-full flex-row">
-            <div className="bg w-full p-8 pt-8">
+            <div className="bg w-full p-8">
               {" "}
               {/* 메인 컨테이너 */}
-              <div className="flex h-full w-full flex-row">
-                <div className="w-8/12 flex-shrink-0">
+              <div className="flex size-full flex-row ">
+                <div className="hidden w-8/12 shrink-0 lg:block">
                   <Image
                     src="/mockup2.svg"
                     alt="archi"
@@ -185,9 +194,9 @@ export default function Chitchat() {
                 </div>
 
                 {/* 글 */}
-                <div className="-translate-x-14 translate-y-20 pt-40">
-                  <p className="text-md pb-5 font-sans">
-                    <span className="text-2xl">Tech Stack</span>
+                <div className=" pl-20 pt-20 lg:-translate-x-14 lg:translate-y-20 lg:pt-40">
+                  <p className="text-md pb-5 font-sans dark:text-white">
+                    <span className=" text-2xl">Tech Stack</span>
                     <br />
                     Just Click for more information
                   </p>
@@ -266,7 +275,8 @@ export default function Chitchat() {
                     <br /> 12월중 베타 테스트 예정.
                   </p>
 
-                  <div className="relative z-[-20] flex place-items-center before:absolute before:h-[100px] before:w-full before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
+                  <div
+                    className="before:bg-gradient-radial after:bg-gradient-conic relative -z-20 flex place-items-center before:absolute before:h-[100px] before:w-full before:rounded-full before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40"></div>
                 </div>
               </div>
             </div>
