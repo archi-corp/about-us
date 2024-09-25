@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-24">
       {/*Fix logo and back button to the top*/}
-      <Topbar></Topbar>
+      <Topbar link="/"></Topbar>
 
       <div className="flex w-full grow flex-col items-center justify-center">
         {/* team archi title */}
