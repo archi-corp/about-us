@@ -62,7 +62,7 @@ type TDots = {
 
 export const Dots: React.FC<TDots> = ({ limit, currentIndex, onDotClick }) => {
   return (
-    <div style={{ position: "fixed", top: 0, left: 100, height: "100%" }}>
+    <div style={{ position: "fixed", top: 0, left: 60, height: "100%" }}>
       <div
         style={{
           position: "fixed",
