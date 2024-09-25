@@ -1,11 +1,67 @@
+"use client";
+import { Topbar } from "../components/topbar";
+import { Profile } from "../components/profile";
+import { LinkToMember } from "../components/linkToMember";
+import { Description } from "../components/description";
+
 export default function Woodio() {
   return (
-    <h1>
-      직접 꾸미고 싶다 ! <br />
-      archi_web/src/app/archi/본인이름/page.tsx 수정 ㄱㄱ
-      <br />
-      니가해라! <br />
-      카톡 ㄱㄱ
-    </h1>
+    <main
+      className={"flex min-h-screen flex-col items-center justify-center px-24"}
+    >
+      {/*  Fix logo and back button to the top */}
+      <Topbar></Topbar>
+      
+      <div className={"flex w-full max-w-7xl flex-col"}>
+        {/* Name and Information Section */}
+        <div
+          className={
+            "flex w-full grow flex-col items-center justify-center lg:my-12 lg:flex-row"
+          }
+        >
+          {/*  Profile */}
+          <Profile
+            imageSrc={"/profile_images/woodio.jpg"}
+            name={"우정균"}
+            role={<>AI Developer</>}
+          ></Profile>
+          {/* Description */}
+          <Description
+            intro="Hello, I'm woodio"
+            desc="여기서부터 저의 자기소개를 주저리주저리 적으면 좋지 않을까요. 여기부터는 정균 오빠의 간단한 자기소개 시작!! 아래 소셜 미디어는 원하시는거 변경/추가해드릴게요"
+            github_link="https://github.com"
+            linkedin_link="https://linkedin.com"
+          ></Description>
+        </div>
+
+        {/*  links to other members */}
+        <div
+          className={
+            "flex flex-col items-center justify-center lg:items-start lg:justify-start"
+          }
+        >
+          <LinkToMember
+            name={"강민석"}
+            imageSrc={"/profile_images/minseok.jpg"}
+            link={"/archi/minseok"}
+          ></LinkToMember>
+          <LinkToMember
+            name={"박연우"}
+            imageSrc={"/profile_images/rachel.jpg"}
+            link={"/archi/rachel"}
+          ></LinkToMember>
+          <LinkToMember
+            name={"양성우"}
+            imageSrc={"/profile_images/yang.jpg"}
+            link={"/archi/yang"}
+          ></LinkToMember>
+          <LinkToMember
+            name={"이지훈"}
+            imageSrc={"/profile_images/rlaalswl.jpg"}
+            link={"/archi/rlaalswl"}
+          ></LinkToMember>
+        </div>
+      </div>
+    </main>
   );
 }
